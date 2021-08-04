@@ -1,0 +1,54 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diferença de idade</title>
+</head>
+<body>
+    <script>
+        var minhaIdade = 22;
+        var idadeIrmao = 19;
+        var diferencaDeIdade = 0;
+
+        function pulaLinha(){
+            document.write("<br>")
+        }
+
+        function calcula(){
+            var diferencaDeIdade = minhaIdade - idadeIrmao;
+            return diferencaDeIdade;
+        }
+
+        function mostra(msg){
+            document.write("<h4>" + msg + "<h4>");
+            pulaLinha();
+        }
+
+        function titulo(msg){
+            document.write("<h1>" + msg + "<h1>");
+        }
+
+        titulo("Quantos anos você tem de diferença do seu irmão?")
+        mostra("Nossa diferença de idade é: " + calcula());
+        
+
+    /*
+        RESOLUÇÃO DO EXERCICIO
+
+            function pulaLinha() {
+                document.write("<br>");
+            }
+
+            function mostra(frase) {
+                document.write(frase);
+            }
+
+            var minhaIdade = 18;
+            var idadeIrmao = 15;
+
+            mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao));
+            pulaLinha();
+
+    */
+
+    </script>
+</body>

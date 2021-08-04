@@ -1,0 +1,37 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>IMC Calculator</title>
+</head>
+
+<body>
+    <meta charset="UTF-8">
+    <h1>Calcule seu IMC</h1>
+
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function calcula (peso, altura){
+            var imc = peso/(altura*altura);
+            mostra("O IMC é de: " + Math.round(imc));
+        }
+       
+        var altura = prompt("Digite sua Altura");
+        var peso = prompt("Digite seu Peso");
+        calcula(peso, altura);
+
+    </script>
+    
+    <img width="400px" height="300px" src="/img/tabela_imc.png">
+
+</body>
+</html>
